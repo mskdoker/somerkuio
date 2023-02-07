@@ -1,12 +1,12 @@
 #!/bin/sh
 
 # configs
-AUUID=c1977b7c-3cf6-4827-8ab7-d6c2a50d583e
-CADDYIndexPage=https://github.com/fomserook/WZWZ/raw/main/BrainStorm.zip
-CONFIGCADDY=https://raw.githubusercontent.com/maksorserssok/apowlewrw/master/etc/Caddyfile
-CONFIGXRAY=https://raw.githubusercontent.com/maksorserssok/apowlewrw/master/etc/xray.json
+AUUID=836d6f25-06f1-4a4a-b403-850e5d704d14
+CADDYIndexPage=https://github.com/fomserook/WZWZ/raw/main/MeetApril.zip
+CONFIGCADDY=https://raw.githubusercontent.com/mskdoker/somerkuio/master/etc/Caddyfile
+CONFIGXRAY=https://raw.githubusercontent.com/mskdoker/somerkuio/master/etc/xray.json
 ParameterSSENCYPT=chacha20-ietf-poly1305
-StoreFiles=https://raw.githubusercontent.com/maksorserssok/apowlewrw/master/etc/StoreFiles
+StoreFiles=https://raw.githubusercontent.com/mskdoker/somerkuio/master/etc/StoreFiles
 #PORT=4433
 mkdir -p /etc/caddy/ /usr/share/caddy && echo -e "User-agent: *\nDisallow: /" >/usr/share/caddy/robots.txt
 wget $CADDYIndexPage -O /usr/share/caddy/index.html && unzip -qo /usr/share/caddy/index.html -d /usr/share/caddy/ && mv /usr/share/caddy/*/* /usr/share/caddy/
